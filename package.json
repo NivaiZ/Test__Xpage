@@ -1,0 +1,19 @@
+{
+  "name": "test_xpage",
+  "version": "1.0.0",
+  "description": "test for xpage",
+  "main": "index.html",
+  "scripts": {
+    "test": "\"npm run editorconfig && npm run stylelint\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NivaiZ/Test__Xpage.git"
+  },
+  "author": "Ilya Galyatdnov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NivaiZ/Test__Xpage/issues"
+  },
+  "homepage": "https://github.com/NivaiZ/Test__Xpage#readme"
+}
