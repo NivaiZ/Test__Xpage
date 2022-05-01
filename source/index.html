@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xpage</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="icon" href="img/faviconsvg.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon180.png">
+  <link rel="manifest" href="../manifest.webmanifest">
+</head>
+
+<body>
+  <header class="header-block">
+    <nav class="header-block__nav container">
+      <a class="header-block__logo">
+        <img class="header-block__picture" src="../img/logoheader.svg" width="135" height="40" alt="logo">
+      </a>
+      <ul class="header-block__list">
+        <li class="header-block__item">
+          <a class="header-block__link header-block__arrow" href="#">Москва
+            <svg class="header-block__svg" width="16" height="16">
+              <use xlink:href="img/sprite.svg#arrow-right__header"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-block__item">
+          <a class="header-block__link" href="#">Сервисы</a>
+        </li>
+        <li class="header-block__item">
+          <a class="header-block__link" href="#">
+            <svg class="header-block__svg" width="16" height="16">
+              <use xlink:href="img/sprite.svg#star__header"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-block__item">
+          <a class="header-block__link" href="#">
+            <svg class="header-block__svg" width="16" height="16">
+              <use xlink:href="img/sprite.svg#group__header"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-block__item">
+          <a class="header-block__link header-block__down" href="#">RU
+            <svg class="header-block__svg" width="16" height="16">
+              <use xlink:href="img/sprite.svg#arrow-down__header"></use>
+            </svg>
+            <ul class="header-block__submenu">
+              <li class="header-block__language">EN</li>
+              <li class="header-block__language">TR</li>
+            </ul>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="header-bottom header-bottom__nav">
+      <ul class="header-bottom__list">
+        <li class="header-bottom__item header-bottom__icon">
+          <a class="header-bottom__link" href="#">Сантехника
+            <svg class="header-block__svg" width="16" height="16">
+              <use xlink:href="img/sprite.svg#shower__header"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-bottom__item header-bottom__icon">
+          <a class="header-bottom__link" href="#">Плитка
+            <svg class="header-block__svg" width="16" height="16">
+              <use xlink:href="img/sprite.svg#list__header"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-bottom__item">
+          <a class="header-bottom__link" href="#">Коллекции</a>
+        </li>
+        <li class="header-bottom__item">
+          <a class="header-bottom__link" href="#">Идеи</a>
+        </li>
+        <li class="header-bottom__item">
+          <a class="header-bottom__link" href="#">О компании</a>
+        </li>
+      </ul>
+
+      <ul class="header-bottom__right">
+        <li class="header-bottom__item header-bottom__opacity">
+          <form action="https://echo.htmlacademy.ru" class="header-bottom__form" method="get">
+            <input class="header-bottom__input" name="header-bottom" type="search" placeholder="Поиск">
+            <button class="header-bottom__search" type="submit">
+              <svg class="header-block__svg" width="25" height="25">
+                <use xlink:href="img/sprite.svg#search__header"></use>
+              </svg>
+            </button>
+          </form>
+        </li>
+        <li class="header-bottom__item">
+          <a class="header-bottom__link" href="#">Где купить
+            <svg class="header-block__svg" width="25" height="25">
+              <use xlink:href="img/sprite.svg#pin__header"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </main>
+  <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

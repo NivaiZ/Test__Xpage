@@ -1,0 +1,141 @@
+.header-bottom__item {
+  list-style: none;
+  margin-right: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  &:hover {
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+
+.header-bottom__list {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.header-bottom__link {
+  display: flex;
+  flex-direction: row-reverse;
+  text-decoration: none;
+  color: @black;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  position: relative;
+  transition: 0.3s ease;
+
+  &:hover::before {
+    content: "";
+    position: absolute;
+    border-bottom: 5px solid @red--shadow;
+    width: 100%;
+    display: block;
+    bottom: -22px;
+    right: 0;
+  }
+}
+
+.header-bottom__icon {
+  position: relative;
+  padding-right: 25px;
+  list-style: none;
+
+  &::after {
+    content: url("../img/arrowdownheader.svg");
+    position: absolute;
+    display: block;
+    right: 3px;
+    top: 0;
+  }
+
+  &:hover::before {
+    content: "";
+    position: absolute;
+    border-bottom: 5px solid @red--shadow;
+    width: 100%;
+    display: block;
+    bottom: -22px;
+    right: 0;
+  }
+}
+
+.header-bottom__search {
+  position: relative;
+  background-color: @opacity;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header-bottom__form {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+
+  &::before {
+    content: "";
+    border-right: 1px solid @gray;
+    display: block;
+    width: 30px;
+  }
+}
+
+.header-bottom__input {
+  width: 0;
+  padding: 0 49px 0 0;
+  border: none;
+  outline: none;
+  transition: 0.4s cubic-bezier(0, 0.8, 0, 1);
+  color: @black;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+  &:focus {
+    width: 300px;
+    z-index: 1;
+    border-bottom: 2px solid @black;
+  }
+
+  &::placeholder {
+    color: @black;
+    min-width: 100px;
+    font-size: 16px;
+  }
+
+  &:hover {
+    min-width: 100px;
+    border-bottom: 1px solid @black;
+  }
+}
+
+.header-bottom__right {
+  display: flex;
+}
+
+.header-bottom__nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  &::before {
+    content: "";
+    border-bottom: 1px solid @gray;
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.header-bottom__opacity {
+  &:hover {
+    background-color: transparent;
+  }
+}

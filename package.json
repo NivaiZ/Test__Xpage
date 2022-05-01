@@ -2,10 +2,15 @@
   "name": "test_xpage",
   "version": "1.0.0",
   "description": "test for xpage",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
-    "test": "\"npm run editorconfig && npm run stylelint\""
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "npm build",
+    "start": "npm start"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NivaiZ/Test__Xpage.git"
@@ -15,5 +20,26 @@
   "bugs": {
     "url": "https://github.com/NivaiZ/Test__Xpage/issues"
   },
-  "homepage": "https://github.com/NivaiZ/Test__Xpage#readme"
+
+  "homepage": "https://github.com/NivaiZ/Test__Xpage#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.5",
+    "browser-sync": "^2.27.9",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-less": "^5.0.0",
+    "gulp-libsquoosh": "^1.1.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "postcss-csso": "^6.0.0",
+    "postcss-less": "^6.0.0",
+    "pug": "^3.0.2",
+    "stylelint-config-htmlacademy": "^0.1.12",
+    "svgstore": "^3.0.1",
+    "swiper": "^8.1.4"
+  }
+
 }
