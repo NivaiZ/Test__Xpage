@@ -11,6 +11,7 @@
   <link rel="icon" href="img/faviconsvg.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon180.png">
   <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -107,12 +108,26 @@
   </header>
   <main class="page-main">
     <!-- Slider main container -->
-    <div class="swiper">
+    <div class="page-main swiper">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">
+          <picture>
+            <!-- <source media="(min-width:991px)" srcset="https://via.placeholder.com/991x250">
+            <source media="(min-width:768px)" srcset="https://via.placeholder.com/768x250"> -->
+            <img typeof="foaf:Image" class="img-responsive" src="../img/slide1.png" width="100%"
+              height="595" alt="">
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <!-- <source media="(min-width:991px)" srcset="https://via.placeholder.com/991x250">
+            <source media="(min-width:768px)" srcset="https://via.placeholder.com/768x250"> -->
+            <img typeof="foaf:Image" class="img-responsive" src="../img/slide3.png" width="100%"
+              height="595" alt="">
+          </picture>
+        </div>
         <div class="swiper-slide">Slide 3</div>
         ...
       </div>
@@ -120,7 +135,6 @@
       <div class="swiper-pagination"></div>
 
       <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
 
       <!-- If we need scrollbar -->

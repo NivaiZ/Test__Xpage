@@ -1,3 +1,6 @@
+/* stylelint-disable value-list-comma-newline-after */
+/* stylelint-disable declaration-colon-space-after */
+/* stylelint-disable string-quotes */
 @font-face {
   font-family: 'SuisseIntl';
   src: local("suisse"), url('../fonts/SuisseIntl-Regular-WebTrial.woff2') format('woff2'), url('../fonts/SuisseIntl-Regular-WebTrial.woff') format('woff');
@@ -567,10 +570,6 @@ body {
 .header-block__arrow .header-block__svg {
   margin-right: 10px;
 }
-.swiper {
-  width: 600px;
-  height: 300px;
-}
 .header-bottom__item {
   list-style: none;
   margin-right: 25px;
@@ -704,6 +703,8 @@ body {
 }
 .page-main {
   display: block;
+  width: 100%;
+  height: 600px;
 }
 
 /*# sourceMappingURL=style.css.map */

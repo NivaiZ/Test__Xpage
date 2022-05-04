@@ -10,7 +10,6 @@
     "build": "npm build",
     "start": "npm start"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NivaiZ/Test__Xpage.git"
@@ -20,7 +19,6 @@
   "bugs": {
     "url": "https://github.com/NivaiZ/Test__Xpage/issues"
   },
-
   "homepage": "https://github.com/NivaiZ/Test__Xpage#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.5",
@@ -38,8 +36,6 @@
     "postcss-less": "^6.0.0",
     "pug": "^3.0.2",
     "stylelint-config-htmlacademy": "^0.1.12",
-    "svgstore": "^3.0.1",
-    "swiper": "^8.1.4"
+    "svgstore": "^3.0.1"
   }
-
 }
