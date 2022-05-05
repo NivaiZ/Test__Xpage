@@ -1,0 +1,69 @@
+.swiper-wrapper {
+  padding: 0;
+}
+
+.swiper-slide {
+  list-style: none;
+}
+
+.swiper__figure {
+  margin: 0;
+}
+
+.swiper__figure img {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.2;
+  }
+}
+
+.swiper__item {
+  list-style: none;
+  flex: 1;
+}
+
+.swiper__list {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 70px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  color: @white;
+}
+
+.swiper__group {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+}
+
+.swiper__point {
+  position: relative;
+  list-style: none;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  color: @white;
+  flex: 1;
+  max-width: 363px;
+  margin-left: 40px;
+
+  &:last-child::after {
+    position: absolute;
+    content: url("../img/counter.svg");
+    display: block;
+    bottom: 0;
+    right: -202px;
+  }
+}
