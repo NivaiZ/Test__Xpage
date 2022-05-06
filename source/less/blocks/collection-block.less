@@ -1,0 +1,130 @@
+.collection-block__list {
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid @black;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+.collection-block__item {
+  list-style: none;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+.collection-block__link {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: @black;
+}
+
+.collection-block__heading {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 50px;
+  margin: 0;
+}
+
+.collection-block__swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+.collection-block__small {
+  background-color: @pink--shade;
+  position: relative;
+}
+
+.collection-block__swiper--item {
+  display: flex;
+}
+
+.collection-block__bestseller {
+  position: absolute;
+  background-color: @shade--cyan;
+  padding: 15px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: @white;
+  top: 0;
+}
+
+.collection-block__new {
+  position: absolute;
+  background-color: @dark--shade--cyan--blue;
+  color: @white;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  padding: 15px;
+  top: 61px;
+}
+
+.collection-block {
+  position: relative;
+}
+
+.collection-block__swiper--list {
+  display: flex;
+}
+
+.collection-block__product--name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.collection-block__product--partnumber {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: @medium--light--shade--gray;
+  list-style: none;
+}
+
+.collection-block__buying {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.collection-block__price {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  list-style: none;
+}
+
+.collection-block__button {
+  list-style: none;
+}
+
+.collection-block__button--link {
+  padding: 7px 75px 8px;
+  color: @white;
+  background: @red--shadow;
+  text-decoration: none;
+}
+
+.collection-block__product {
+  padding: 0;
+}
