@@ -15,8 +15,8 @@
 </head>
 
 <body>
-  <header class="header-block">
-    <nav class="header-block__nav container">
+  <header class="header-block" id="header-block">
+    <nav class="header-block__nav">
       <a class="header-block__logo">
         <img class="header-block__picture" src="../img/logoheader.svg" width="135" height="40" alt="logo">
       </a>
@@ -106,8 +106,10 @@
       </ul>
     </nav>
   </header>
+
   <main class="page-main">
-    <div class="page-main__container">
+
+    <section class="page-main__container">
       <div class="page-main swiper">
         <ul class="swiper-wrapper">
           <li class="swiper-slide">
@@ -131,8 +133,9 @@
         <li class="swiper__point">Встречайте новое поступление сантехники из натурального камня →</li>
         <li class="swiper__point">Оцените возможности керамогранита с новой серией MIX 2020 →</li>
       </ul>
-    </div>
-    <div class="collection-block">
+    </section>
+
+    <section class="collection-block">
       <ul class="collection-block__list">
         <li class="collection-block__item">
           <h2 class="collection-block__heading">Коллекции</h2>
@@ -144,7 +147,8 @@
           <a class="collection-block__link" href="#">Коллекции плитки →</a>
         </li>
       </ul>
-      <div class="collection-block__swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+      <div
+        class="collection-block__swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hilien">
         <ul class="swiper-wrapper collection-block__swiper--list">
           <li class="swiper-slide collection-block__swiper--item">
             <figure class="collection-block__container">
@@ -171,8 +175,207 @@
           </li>
         </ul>
       </div>
-    </div>
+    </section>
+
+    <section class="block-ideas">
+      <h2 class="block-ideas__heading">Идеи</h2>
+      <ul class="block-ideas__list">
+        <li class="block-ideas__item">
+          <a class="block-ideas__link">Решения для ванной</a>
+        </li>
+        <li class="block-ideas__item">
+          <a class="block-ideas__link">Дизайн туалета</a>
+        </li>
+        <li class="block-ideas__item">
+          <a class="block-ideas__link">Твой стиль</a>
+        </li>
+        <li class="block-ideas__item">
+          <a class="block-ideas__link">Дизайн ванной</a>
+        </li>
+        <li class="block-ideas__item">
+          <a class="block-ideas__link">Экономия воды</a>
+        </li>
+        <li class="block-ideas__item block-ideas__item--arrow">
+          <a class="block-ideas__link">Все идеи →</a>
+        </li>
+      </ul>
+      <ul class="block-ideas__inner">
+        <li class="block-ideas__wrapper block-ideas__transform">
+          <img class="block-ideas__photo" src="../img/ideasimg1.png" alt="Фото большой раковины">
+          <div class="block-ideas__group">
+            <p class="block-ideas__text">Решения для хранения</p>
+            <p class="block-ideas__text">Максимальное пространство для хранения без ущерба для внешнего вида комнаты
+            </p>
+          </div>
+        </li>
+        <li class="block-ideas__wrapper block-ideas__wrapper--right">
+          <div class="block-ideas__bottom block-ideas__transform">
+            <img class="block-ideas__photo" src="../img/ideasimg2.png" alt="Фото маленькой раковины">
+            <p class="block-ideas__text">Дизайн туалета</p>
+            <p class="block-ideas__text">Соображения по поводу дизайна ключевой части образа вашей ванной комнаты!</p>
+          </div>
+          <div class="block-ideas__wrapper block-ideas__wrapper--position">
+            <div class="block-ideas__group block-ideas__transform">
+              <img class="block-ideas__photo" src="../img/ideasimg3.png" alt="Фото смесителя" width="670" height="310">
+              <p class="block-ideas__text">Экономим воду</p>
+              <p class="block-ideas__text">Как сэкономить воду без ущерба для стиля
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
   </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <ul class="page-footer__list page-fotter__list--email">
+        <li class="page-footer__item">
+          <p class="page-footer__text">Мы собираем самые интересные материалы в рассылку по вторникам</p>
+          <a class="page-footer__text page-footer__text--arrow" href="#header-block">Наверх</a>
+        </li>
+        <li class="page-footer__item">
+          <form class="page-footer__form" action="https://echo.htmlacademy.ru" method="get">
+            <label class="page-footer__label" for="page-footer__enter--email"></label>
+            <input class="page-footer__enter--email" type="email" name="page-footer__enter--email"
+              placeholder="Электронная почта">
+            <button class="page-footer__enter--button" type="submit" id="page-footer__enter--email"></button>
+          </form>
+        </li>
+      </ul>
+      <div class="page-fotter__column">
+        <ul class="page-footer__list page-footer__list--checklist">
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Идеи и вдохновение</a>
+          </li>
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Новости</a>
+          </li>
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Каталоги</a>
+          </li>
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Где купить</a>
+          </li>
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Сервисы</a>
+          </li>
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Дистрибьютерам</a>
+          </li>
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">FAQ</a>
+          </li>
+        </ul>
+        <ul class="page-footer__list page-footer__list--checklist">
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">О компании —</a>
+          </li>
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">История Vitra</a>
+          </li>
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Дизайн</a>
+          </li>
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Инновации</a>
+          </li>
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Экологичность</a>
+          </li>
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Корпоративная ответственность</a>
+          </li>
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Vitra и архитекторы</a>
+          </li>
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="page-footer__list page-footer__list--checklist">
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Все продукты —</a>
+          </li>
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Сантехника для ванной</a>
+          </li>
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Плитка</a>
+          </li>
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Смесители</a>
+          </li>
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Инсталяции</a>
+          </li>
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Душевые системы</a>
+          </li>
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Аксессуары</a>
+          </li>
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Мебель для ванной</a>
+          </li>
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Ванны</a>
+          </li>
+        </ul>
+
+        <ul class="page-footer__list page-footer__list--checklist">
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Шоурумы —</a>
+          </li>
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Диджитал шоурум сантехники</a>
+          </li>
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Диджитал шоурум плитки</a>
+          </li>
+          <li class="page-footer__col">
+            <a class="page-footer__link" href="#">Шоурум плитки</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__social">
+        <ul class="page-footer__social page-footer__social--list">
+          <li class="page-footer__social page-footer__social--item">
+            <img class="page-footer__img" src="../img/logofooterleft.png" alt="Логотип компании Eczacıbaşı">
+          </li>
+          <li class="page-footer__social page-footer__social--vk">
+            <svg class="header-block__svg" width="25" height="25">
+              <use xlink:href="img/sprite.svg#footer-logo__vk"></use>
+            </svg>
+          </li>
+          <li class="page-footer__social page-footer__social--youtube">
+            <svg class="header-block__svg" width="25" height="25">
+              <use xlink:href="img/sprite.svg#logo-footer__youtube"></use>
+            </svg>
+          </li>
+          <li class="page-footer__social page-footer__social--vk">
+            <svg class="header-block__svg" width="25" height="25">
+              <use xlink:href="img/sprite.svg#footer-logo__vk"></use>
+            </svg>
+          </li>
+          <li class="page-footer__social page-footer__social--youtube">
+            <svg class="header-block__svg" width="25" height="25">
+              <use xlink:href="img/sprite.svg#logo-footer__youtube"></use>
+            </svg>
+          </li>
+        </ul>
+        <ul class="page-footer__studio">
+          <li class="page-footer__studio page-footer__studio--logo">
+            <p class="page-footer__studio page-footer__studio--text">Vitra 2021</p>
+            <a class="page-footer__studio page-footer__studio--privacy" href="#">Политика конфиденциальности</a>
+          </li>
+          <li class="page-footer__studio page-footer__studio--logo">
+            <a class="page-footer__studio page-footer__studio--name" href="#">Made by ONY</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
   <script src="js/main.js" type="module"></script>
 </body>
 

@@ -323,6 +323,8 @@ body {
 }
 .container {
   padding: 20px 40px 0 40px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .header-block__nav {
   display: flex;
@@ -545,7 +547,8 @@ body {
 .page-main {
   display: block;
   width: 100%;
-  height: 600px;
+}
+.page-main__container {
   position: relative;
 }
 .swiper-wrapper {
@@ -719,6 +722,197 @@ body {
 }
 .collection-block__product {
   padding: 0;
+}
+.block-ideas__heading {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 50px;
+}
+.block-ideas__list {
+  position: relative;
+  display: flex;
+  padding: 0;
+}
+.block-ideas__list::before {
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid #000000;
+  bottom: 0;
+  width: 100%;
+}
+.block-ideas__item {
+  list-style: none;
+  margin-left: 30px;
+}
+.block-ideas__item:nth-child(1) {
+  margin-left: 0;
+}
+.block-ideas__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+}
+.block-ideas__group {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.block-ideas__bottom {
+  display: flex;
+  flex-direction: column;
+}
+.block-ideas__wrapper {
+  display: flex;
+}
+.block-ideas__text {
+  max-width: 320px;
+}
+.block-ideas__item--arrow {
+  flex: 1;
+  text-align: end;
+}
+.block-ideas__wrapper--right {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.block-ideas__wrapper--position {
+  margin-right: 58px;
+}
+.block-ideas__transform {
+  overflow: hidden;
+}
+.block-ideas__photo {
+  transition: 0.5s;
+}
+.block-ideas__photo:hover {
+  transform: scale(1.05);
+}
+.block-ideas__bottom img {
+  height: 310px;
+}
+.page-footer__link {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  margin-left: 0;
+  max-width: 210px;
+}
+.page-fotter__column {
+  display: flex;
+}
+.page-footer__list--checklist {
+  margin-left: 20px;
+}
+.page-footer__wrapper {
+  background-color: #8C8987;
+}
+.page-footer__item {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+.page-footer__enter--email {
+  width: 276px;
+  outline: none;
+  border-bottom: 1px solid #FFFFFF;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #8C8987;
+}
+.page-footer__enter--email::-moz-placeholder {
+  color: #FFFFFF;
+}
+.page-footer__enter--email:-ms-input-placeholder {
+  color: #FFFFFF;
+}
+.page-footer__enter--email::placeholder {
+  color: #FFFFFF;
+}
+.page-footer__enter--email:focus:valid {
+  border-bottom: 1px solid #8bc834;
+}
+.page-footer__enter--email:focus:invalid {
+  border-bottom: 1px solid #B01E19;
+}
+.page-footer__enter--button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+.page-footer__enter--button::before {
+  position: absolute;
+  content: url("../img/arrowfooter.svg");
+  top: -14px;
+  left: -18px;
+}
+.page-footer__form {
+  position: relative;
+}
+.page-footer__text--arrow {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 50px;
+  text-decoration: none;
+  color: #FFFFFF;
+  align-items: center;
+}
+.page-footer__text--arrow::before {
+  position: absolute;
+  content: url("../img/footerarrowup.svg");
+  margin-left: 10px;
+  right: -17px;
+}
+.page-footer__col {
+  list-style: none;
+}
+.page-footer__link {
+  text-decoration: none;
+}
+.page-fotter__column {
+  position: relative;
+}
+.page-fotter__column::before {
+  content: "";
+  border-bottom: 1px solid #FFFFFF;
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+}
+.page-footer__social {
+  list-style: none;
+}
+.page-footer__social--list {
+  display: flex;
+  align-items: center;
+}
+.page-footer__social--item {
+  flex: 1;
+}
+.page-footer__studio {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.page-footer__studio--text {
+  margin-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

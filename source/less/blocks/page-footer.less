@@ -1,0 +1,122 @@
+.page-footer__wrapper {
+  background-color: @taupe--gray;
+}
+
+.page-footer__item {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: @white;
+  margin-top: 20px;
+}
+
+.page-footer__enter--email {
+  width: 276px;
+  outline: none;
+  border-bottom: 1px solid @white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: @taupe--gray;
+
+  &::placeholder {
+    color: @white;
+  }
+
+  &:focus:valid {
+    border-bottom: 1px solid @shade--green;
+  }
+
+  &:focus:invalid {
+    border-bottom: 1px solid @red--shadow;
+  }
+}
+
+.page-footer__enter--button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: url("../img/arrowfooter.svg");
+    top: -14px;
+    left: -18px;
+  }
+}
+
+.page-footer__form {
+  position: relative;
+}
+
+.page-footer__text--arrow {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 50px;
+  text-decoration: none;
+  color: @white;
+  align-items: center;
+
+  &::before {
+    position: absolute;
+    content: url("../img/footerarrowup.svg");
+    margin-left: 10px;
+    right: -17px;
+  }
+}
+
+.page-footer__col {
+  list-style: none;
+}
+
+.page-footer__link {
+  text-decoration: none;
+}
+
+.page-fotter__column {
+  position: relative;
+
+  &::before {
+    content: "";
+    border-bottom: 1px solid @white;
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+  }
+}
+
+.page-footer__social {
+  list-style: none;
+}
+
+.page-footer__social--list {
+  display: flex;
+  align-items: center;
+}
+
+.page-footer__social--item {
+  flex: 1;
+}
+
+.page-footer__studio {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+  color: @white;
+}
+
+.page-footer__studio--text {
+  margin-right: 20px;
+}
