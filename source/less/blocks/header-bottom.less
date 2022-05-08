@@ -37,6 +37,16 @@
     bottom: -22px;
     right: 0;
   }
+
+  &:focus::before {
+    content: "";
+    position: absolute;
+    border-bottom: 5px solid @red--shadow;
+    width: 100%;
+    display: block;
+    bottom: -22px;
+    right: 0;
+  }
 }
 
 .header-bottom__icon {
@@ -138,4 +148,26 @@
   &:hover {
     background-color: transparent;
   }
+}
+
+.header-bottom__dropdown--list {
+  display: none;
+}
+
+.header-bottom__level--list {
+  display: none;
+}
+
+.header-bottom__level--item {
+  list-style: none;
+}
+
+.header-bottom__dropdown--block {
+  display: block;
+  position: absolute;
+  z-index: 3;
+}
+
+.header-bottom__level--block {
+  display: block;
 }

@@ -20,7 +20,7 @@ const swiperCollection = new Swiper('.swiper.collection-block__swiper', {
   loop: true,
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next--collection',
+    prevEl: '.swiper-button-prev--collection',
   },
 });

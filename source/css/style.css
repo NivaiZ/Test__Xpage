@@ -449,6 +449,15 @@ body {
   bottom: -22px;
   right: 0;
 }
+.header-bottom__link:focus::before {
+  content: "";
+  position: absolute;
+  border-bottom: 5px solid #B01E19;
+  width: 100%;
+  display: block;
+  bottom: -22px;
+  right: 0;
+}
 .header-bottom__icon {
   position: relative;
   padding-right: 25px;
@@ -543,6 +552,23 @@ body {
 }
 .header-bottom__opacity:hover {
   background-color: transparent;
+}
+.header-bottom__dropdown--list {
+  display: none;
+}
+.header-bottom__level--list {
+  display: none;
+}
+.header-bottom__level--item {
+  list-style: none;
+}
+.header-bottom__dropdown--block {
+  display: block;
+  position: absolute;
+  z-index: 3;
+}
+.header-bottom__level--block {
+  display: block;
 }
 .page-main {
   display: block;
@@ -719,50 +745,89 @@ body {
   color: #FFFFFF;
   background: #B01E19;
   text-decoration: none;
+  transition: 0.3s ease;
+}
+.collection-block__button--link:hover {
+  border: 2px solid #CD100A;
+  border-radius: 20px;
 }
 .collection-block__product {
   padding: 0;
 }
-.swiper-button-next.collection-block__arrow--next {
+.swiper-button-next--collection.collection-block__arrow--next {
   content: url("../img/collectionarrowright.svg");
   position: absolute;
   width: 40px;
   height: 40px;
+  right: 0;
+  cursor: pointer;
 }
-.swiper-button-prev.collection-block__arrow--prev {
+.swiper-button-next--collection.collection-block__arrow--next:hover {
+  content: url("../img/collectionarrowrightred.svg");
+}
+.swiper-button-prev--collection.collection-block__arrow--prev {
   content: url("../img/collectionarrowleft.svg");
   position: absolute;
   right: 53px;
   left: auto;
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
-.collection-block__plus--red {
+.swiper-button-prev--collection.collection-block__arrow--prev:hover {
+  content: url("../img/collectionarrowleftred.svg");
+}
+/* .collection-block__plus--red {
   position: relative;
-}
-.collection-block__plus--red::before {
+
+  &::before {
+    cursor: pointer;
+    content: url("../img/redplus.svg");
+    position: absolute;
+    bottom: 38%;
+    right: 65%;
+  }
+
+  &::after {
+    cursor: pointer;
+    content: url("../img/blackplus.svg");
+    position: absolute;
+    bottom: 60%;
+    left: 45%;
+  }
+
+  &:hover::after {
+    content: url("../img/blackplusred.svg");
+  }
+} */
+.collection-block__plus--enter::after {
   cursor: pointer;
-  content: url("../img/redplus.svg");
-  position: absolute;
-  bottom: 38%;
-  right: 65%;
-}
-.collection-block__plus--red::after {
-  cursor: pointer;
-  content: url("../img/blackplus.svg");
-  position: absolute;
-  bottom: 60%;
-  left: 45%;
-}
-.collection-block__plus--black {
-  position: relative;
-}
-.collection-block__plus--black::after {
-  cursor: pointer;
-  content: url("../img/blackplus.svg");
+  content: url("../img/blackplus.png");
   position: absolute;
   bottom: 27%;
   right: 82%;
+}
+.collection-block__plus--enter:hover::after {
+  content: url("../img/blackplusred.png");
+}
+.collection-block__plus--enter:active::after {
+  content: url("../img/blackplusredactive.png");
+}
+.collection-block__plus--two::after {
+  bottom: 58%;
+  right: 52%;
+}
+.collection-block__plus--three::after {
+  bottom: 23%;
+  right: 21%;
+}
+.collection-block__plus--four::after {
+  right: 64%;
+  bottom: 38%;
+  display: inline-table;
+}
+.collection-block__plus--black {
+  position: relative;
 }
 .block-ideas__heading {
   font-weight: 400;
@@ -877,8 +942,8 @@ body {
 .page-footer__enter--email::placeholder {
   color: #FFFFFF;
 }
-.page-footer__enter--email:focus:valid {
-  border-bottom: 1px solid #8bc834;
+.page-footer__enter--email:focus {
+  border-bottom: 1px solid #FFFFFF;
 }
 .page-footer__enter--email:focus:invalid {
   border-bottom: 1px solid #B01E19;
@@ -954,6 +1019,28 @@ body {
 }
 .page-footer__studio--text {
   margin-right: 20px;
+}
+.page-footer__social--link {
+  position: relative;
+  margin-right: 30px;
+}
+.page-footer__social--link::before {
+  height: 25px;
+  border-right: 1px solid #FFFFFF;
+  content: "";
+  position: absolute;
+  width: 10px;
+  top: -8px;
+  right: 0;
+}
+.page-footer__svg {
+  margin-right: 20px;
+}
+.page-footer__social--nolink::before {
+  border-right: none;
+}
+.page-footer__social--logo {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

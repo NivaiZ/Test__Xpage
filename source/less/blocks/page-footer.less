@@ -26,8 +26,8 @@
     color: @white;
   }
 
-  &:focus:valid {
-    border-bottom: 1px solid @shade--green;
+  &:focus {
+    border-bottom: 1px solid @white;
   }
 
   &:focus:invalid {
@@ -119,4 +119,33 @@
 
 .page-footer__studio--text {
   margin-right: 20px;
+}
+
+.page-footer__social--link {
+  position: relative;
+  margin-right: 30px;
+
+  &::before {
+    height: 25px;
+    border-right: 1px solid @white;
+    content: "";
+    position: absolute;
+    width: 10px;
+    top: -8px;
+    right: 0;
+  }
+}
+
+.page-footer__svg {
+  margin-right: 20px;
+}
+
+.page-footer__social--nolink {
+  &::before {
+    border-right: none;
+  }
+}
+
+.page-footer__social--logo {
+  display: block;
 }
