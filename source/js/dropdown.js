@@ -24,7 +24,6 @@ const clickHeaderDropdownFunction = () => {
       evt.preventDefault();
       item.classList.toggle('header-bottom__link--open');
       dropDownNone.classList.toggle('header-bottom__dropdown--block');
-      dropDownLevel.classList.toggle('header-bottom__level--block');
     });
   });
 }

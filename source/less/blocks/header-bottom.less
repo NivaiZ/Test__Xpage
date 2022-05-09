@@ -160,14 +160,59 @@
 
 .header-bottom__level--item {
   list-style: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: @black;
+  text-decoration: none;
 }
 
 .header-bottom__dropdown--block {
-  display: block;
+  display: flex;
   position: absolute;
   z-index: 3;
+  width: 1440px;
+  height: 400px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: @white;
+  flex-direction: column;
 }
 
 .header-bottom__level--block {
   display: block;
+}
+
+.header-bottom__dropdown--link {
+  margin-right: 30px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: @black;
+  text-decoration: none;
+}
+
+.header-bottom__dropdown {
+  list-style: none;
+}
+
+.header-bottom__level--img {
+  display: block;
+  position: absolute;
+  right: 30px;
+  top: -30px;
+}
+
+.header-bottom__level--figure {
+  position: relative;
+}
+
+.header-botton__level__img {
+  position: absolute;
+  right: 0;
+  left: 50%;
+}
+
+.header-botton__level__img--one {
+  bottom: 0;
 }
