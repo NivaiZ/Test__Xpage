@@ -1,4 +1,7 @@
 const clickDropDown = document.querySelector('.header-block__down');
+const clickHeaderDropdown = document.querySelectorAll('.header-bottom__link');
+const dropDownNone = document.querySelector('.header-bottom__dropdown');
+const dropDownLevel = document.querySelector('.header-bottom__level');
 
 const clickDropDownFunction = () => {
 
@@ -13,10 +16,6 @@ const clickDropDownFunction = () => {
 }
 clickDropDownFunction();
 
-
-const clickHeaderDropdown = document.querySelectorAll('.header-bottom__link');
-const dropDownNone = document.querySelector('.header-bottom__dropdown');
-const dropDownLevel = document.querySelector('.header-bottom__level');
 const clickHeaderDropdownFunction = () => {
 
   clickHeaderDropdown.forEach((item) => {
@@ -26,5 +25,7 @@ const clickHeaderDropdownFunction = () => {
       dropDownNone.classList.toggle('header-bottom__dropdown--block');
     });
   });
+
 }
+
 clickHeaderDropdownFunction();
