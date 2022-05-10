@@ -10,7 +10,7 @@
   margin: 0;
 }
 
-.swiper__figure img {
+.swiper__figure .img-responsive {
   opacity: 1;
   transition: 0.3s ease-in-out;
 
@@ -36,16 +36,28 @@
   z-index: 1;
   width: 100%;
   color: @white;
+
+  @media (max-width: 768px) {
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 50px;
+    max-width: 255px;
+  }
 }
 
 .swiper__group {
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   position: absolute;
+  align-items: center;
   z-index: 1;
   bottom: 0;
   width: 100%;
+}
+
+.swiper__group--one {
+  grid-template-columns: 5fr 1fr;
 }
 
 .swiper__point {
@@ -59,11 +71,11 @@
   max-width: 363px;
   margin-left: 40px;
 
-  &:last-child::after {
-    position: absolute;
-    content: url("../img/counter.svg");
-    display: block;
-    bottom: 0;
-    right: -202px;
+  @media (max-width: 768px) {
+    display: none;
   }
+}
+
+.swiper__point--img {
+  margin-top: 60px;
 }

@@ -27,6 +27,10 @@
   margin-bottom: 10px;
   text-decoration: none;
   color: @black;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .collection-block__heading {
@@ -34,6 +38,10 @@
   font-size: 45px;
   line-height: 50px;
   margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
 }
 
 .collection-block__swiper {
@@ -142,6 +150,7 @@
   height: 40px;
   right: 0;
   cursor: pointer;
+  top: 10px;
 
   &:hover {
     content: url("../img/collectionarrowrightred.svg");
@@ -156,35 +165,20 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
+  top: 10px;
 
   &:hover {
     content: url("../img/collectionarrowleftred.svg");
   }
 }
 
-/* .collection-block__plus--red {
-  position: relative;
+.collection-block__plus--red {
+  margin-left: 0;
 
-  &::before {
-    cursor: pointer;
-    content: url("../img/redplus.svg");
-    position: absolute;
-    bottom: 38%;
-    right: 65%;
+  @media (max-width: 900px) {
+    margin: 0;
   }
-
-  &::after {
-    cursor: pointer;
-    content: url("../img/blackplus.svg");
-    position: absolute;
-    bottom: 60%;
-    left: 45%;
-  }
-
-  &:hover::after {
-    content: url("../img/blackplusred.svg");
-  }
-} */
+}
 
 .collection-block__plus--enter {
   &::after {
