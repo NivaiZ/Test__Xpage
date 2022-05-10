@@ -80,4 +80,8 @@
   <path d="M22 12L14 20L22 28" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 </symbol>
 
+<symbol viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg" id="nav-header-arrow">
+<path d="M7.14 0.299999L6.18 1.29L9.165 4.245H0.555V5.7H9.135L6.18 8.64L7.14 9.63L11.775 4.965L7.14 0.299999Z" fill="black"/>
+</symbol>
+
 </svg>
