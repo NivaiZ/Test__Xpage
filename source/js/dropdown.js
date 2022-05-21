@@ -4,6 +4,7 @@ const dropDownNone = document.querySelector('.header-bottom__dropdown');
 const dropDownLevel = document.querySelector('.header-bottom__level');
 const hoverCardMenu = document.querySelector('.header-bottom__level--items');
 const hoverCardFigure = document.querySelector('.header-bottom__level--figure');
+const accordionBtns = document.querySelectorAll('.page-footer__link--mobile');
 
 const clickDropDownFunction = () => {
 
@@ -17,8 +18,6 @@ const clickDropDownFunction = () => {
   });
 }
 
-clickDropDownFunction();
-
 const clickHeaderDropdownFunction = () => {
 
   clickHeaderDropdown.forEach((item) => {
@@ -30,8 +29,6 @@ const clickHeaderDropdownFunction = () => {
   });
 
 }
-
-clickHeaderDropdownFunction();
 
 const eventOverClassFunction = () => {
   hoverCardMenu.addEventListener('mouseover', (event) => {
@@ -47,5 +44,27 @@ const eventMouseoutClassFunction = () => {
   });
 };
 
+accordionBtns.forEach((accordion) => {
+
+  accordion.onclick = function (event) {
+    event.preventDefault();
+    this.classList.toggle("is-open");
+
+    let content = this.nextElementSibling;
+    console.log(content);
+
+    if (content.style.maxHeight) {
+      //this is if the accordion is open
+      content.style.maxHeight = null;
+    } else {
+      //if the accordion is currently closed
+      content.style.maxHeight = content.scrollHeight + "px";
+      console.log(content.style.maxHeight);
+    }
+  };
+});
+
+clickDropDownFunction();
+clickHeaderDropdownFunction();
 eventOverClassFunction();
 eventMouseoutClassFunction();
