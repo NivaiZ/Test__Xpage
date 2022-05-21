@@ -6,7 +6,7 @@ const swiper = new Swiper('.swiper.page-main__swiper', {
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper__point--img',
   },
 
   // Navigation arrows

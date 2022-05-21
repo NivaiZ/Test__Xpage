@@ -6,13 +6,13 @@
   list-style: none;
 }
 
-.swiper__figure {
+.swiper-figure {
   margin: 0;
 }
 
-.swiper__figure .img-responsive {
-  opacity: 1;
+.swiper-figure__img {
   transition: 0.3s ease-in-out;
+  width: 100%;
 
   &:hover {
     opacity: 0.2;
@@ -20,8 +20,13 @@
 }
 
 .swiper__item {
-  list-style: none;
-  flex: 1;
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    list-style: none;
+    flex: 1;
+  }
 }
 
 .swiper__list {
@@ -76,6 +81,15 @@
   }
 }
 
-.swiper__point--img {
+.page-main__container .swiper__group .swiper__point--img {
   margin-top: 60px;
+  width: unset;
+}
+
+.swiper-slide--desktop {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
 }

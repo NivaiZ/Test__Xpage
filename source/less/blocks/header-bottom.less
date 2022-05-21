@@ -120,10 +120,18 @@
   right: 0;
   z-index: 2;
 
+  @media (max-width: 768px) {
+    padding: 0 15px 0 0;
+  }
+
   &:focus {
     width: 300px;
     z-index: 1;
     border-bottom: 2px solid @black;
+
+    @media (max-width: 768px) {
+      width: 100px;
+    }
   }
 
   &::placeholder {
@@ -255,6 +263,7 @@
 
 .header-bottom__level--figure {
   position: relative;
+  display: none;
 }
 
 .header-botton__level__img {
@@ -383,4 +392,8 @@
   @media (max-width: 768px) {
     width: 100%;
   }
+}
+
+.header-bottom__level--bowl {
+  display: block;
 }

@@ -2,6 +2,8 @@ const clickDropDown = document.querySelector('.header-block__down');
 const clickHeaderDropdown = document.querySelectorAll('.header-bottom__link');
 const dropDownNone = document.querySelector('.header-bottom__dropdown');
 const dropDownLevel = document.querySelector('.header-bottom__level');
+const hoverCardMenu = document.querySelector('.header-bottom__level--items');
+const hoverCardFigure = document.querySelector('.header-bottom__level--figure');
 
 const clickDropDownFunction = () => {
 
@@ -14,6 +16,7 @@ const clickDropDownFunction = () => {
     }
   });
 }
+
 clickDropDownFunction();
 
 const clickHeaderDropdownFunction = () => {
@@ -29,3 +32,20 @@ const clickHeaderDropdownFunction = () => {
 }
 
 clickHeaderDropdownFunction();
+
+const eventOverClassFunction = () => {
+  hoverCardMenu.addEventListener('mouseover', (event) => {
+    event.preventDefault();
+    hoverCardFigure.classList.add('header-bottom__level--bowl');
+  });
+};
+
+const eventMouseoutClassFunction = () => {
+  hoverCardMenu.addEventListener('mouseout', (event) => {
+    event.preventDefault();
+    hoverCardFigure.classList.remove('header-bottom__level--bowl');
+  });
+};
+
+eventOverClassFunction();
+eventMouseoutClassFunction();

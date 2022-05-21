@@ -67,6 +67,10 @@
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .block-ideas__wrapper--position {
@@ -101,6 +105,11 @@
 
 .page-footer__list--checklist {
   margin-left: 20px;
+
+  @media (max-width: 768px) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .block-ideas__list::-webkit-scrollbar {
