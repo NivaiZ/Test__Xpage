@@ -242,7 +242,7 @@
           <li class="swiper-slide">
             <figure class="swiper-figure">
               <picture>
-                <source media="(min-width: 768px)" srcset="../img/slide3.png" >
+                <source media="(min-width: 768px)" srcset="../img/slide3.png">
                 <img src="../img/slide2mob.png" alt="">
               </picture>
             </figure>
@@ -276,11 +276,14 @@
           <li class="swiper-slide collection-block__swiper--item">
             <div class="collection-block__plus--black">
               <figure class="collection-block__container collection-block__plus--red">
-                <img class="collection-block__big" src="../img/collectionbigslide.png" alt="">
-                <span class="collection-block__plus--enter collection-block__plus--one"></span>
-                <span class="collection-block__plus--enter collection-block__plus--two"></span>
-                <span class="collection-block__plus--enter collection-block__plus--three"></span>
-                <span class="collection-block__plus--enter collection-block__plus--four"></span>
+                <picture>
+                  <source media="(min-width: 768px)" srcset="../img/collectionbigslide.png">
+                  <img class="collection-block__big" src="../img/collectionmobile.png" alt="">
+                </picture>
+                <span class="collection-block__popup collection-block__plus--one collection-block__plus--enter"></span>
+                <span class="collection-block__popup collection-block__plus--two collection-block__plus--enter"></span>
+                <span class="collection-block__popup collection-block__plus--three collection-block__plus--enter"></span>
+                <span class="collection-block__popup collection-block__plus--four collection-block__plus--enter"></span>
               </figure>
             </div>
             <div class="collection-block__container collection-block__position">
@@ -308,26 +311,26 @@
     <section class="block-ideas container">
       <h2 class="block-ideas__heading">Идеи</h2>
       <ul class="block-ideas__list">
-        <li class="block-ideas__item">
-          <a class="block-ideas__link">Решения для ванной</a>
+        <li class="block-ideas__item block-active" data-tab="1">
+          <a class="block-ideas__link" href="#">Решения для ванной</a>
         </li>
-        <li class="block-ideas__item">
-          <a class="block-ideas__link">Дизайн туалета</a>
+        <li class="block-ideas__item" data-tab="2">
+          <a class="block-ideas__link" href="#">Дизайн туалета</a>
         </li>
-        <li class="block-ideas__item">
-          <a class="block-ideas__link">Твой стиль</a>
+        <li class="block-ideas__item" data-tab="3">
+          <a class="block-ideas__link" href="#">Твой стиль</a>
         </li>
-        <li class="block-ideas__item">
-          <a class="block-ideas__link">Дизайн ванной</a>
+        <li class="block-ideas__item" data-tab="4">
+          <a class="block-ideas__link" href="#">Дизайн ванной</a>
         </li>
-        <li class="block-ideas__item">
-          <a class="block-ideas__link">Экономия воды</a>
+        <li class="block-ideas__item" data-tab="5">
+          <a class="block-ideas__link" href="#">Экономия воды</a>
         </li>
-        <li class="block-ideas__item block-ideas__item--arrow">
-          <a class="block-ideas__link">Все идеи →</a>
+        <li class="block-ideas__item block-ideas__item--arrow" data-tab="6">
+          <a class="block-ideas__link" href="#">Все идеи →</a>
         </li>
       </ul>
-      <ul class="block-ideas__inner">
+      <ul class="block-ideas__inner block-active" data-tab="1">
         <li class="block-ideas__wrapper block-ideas__transform">
           <img class="block-ideas__photo" src="../img/ideasimg1.png" alt="Фото большой раковины" loading="lazy">
           <div class="block-ideas__group">
@@ -339,14 +342,55 @@
         <li class="block-ideas__wrapper block-ideas__wrapper--right">
           <div class="block-ideas__bottom block-ideas__transform">
             <img class="block-ideas__photo" src="../img/ideasimg2.png" alt="Фото маленькой раковины" loading="lazy">
-            <p class="block-ideas__text">Дизайн туалета</p>
-            <p class="block-ideas__text">Соображения по поводу дизайна ключевой части образа вашей ванной комнаты!</p>
+            <div class="block-ideas__wrapper block-ideas__wrapper--mobile">
+              <p class="block-ideas__text">Дизайн туалета</p>
+              <p class="block-ideas__text">Соображения по поводу дизайна ключевой части образа вашей ванной комнаты!</p>
+            </div>
           </div>
           <div class="block-ideas__wrapper block-ideas__wrapper--position">
             <div class="block-ideas__group block-ideas__transform">
               <img class="block-ideas__photo" src="../img/ideasimg3.png" alt="Фото смесителя" loading="lazy">
               <p class="block-ideas__text">Экономим воду</p>
               <p class="block-ideas__text">Как сэкономить воду без ущерба для стиля
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="block-ideas__inner" data-tab="2">
+        <li class="block-ideas__wrapper block-ideas__transform">
+          <img class="block-ideas__photo" src="../img/ideasimg1.png" alt="Фото большой раковины" loading="lazy">
+          <div class="block-ideas__group">
+            <p class="block-ideas__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime repellat
+              accusantium natus labore id deserunt harum, recusandae beatae tempore corporis et nobis corrupti quos
+              consequatur illum nesciunt excepturi odio velit?</p>
+            <p class="block-ideas__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, illum,
+              reprehenderit vero vitae optio odio tempora nostrum aliquam quod minus laborum voluptate officiis amet,
+              quo dignissimos dolore dolorum iusto totam.
+            </p>
+          </div>
+        </li>
+        <li class="block-ideas__wrapper block-ideas__wrapper--right">
+          <div class="block-ideas__bottom block-ideas__transform">
+            <img class="block-ideas__photo" src="../img/ideasimg2.png" alt="Фото маленькой раковины" loading="lazy">
+            <div class="block-ideas__wrapper block-ideas__wrapper--mobile">
+              <p class="block-ideas__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit modi
+                facere, error quisquam nulla tenetur mollitia suscipit impedit ipsam voluptate, cumque harum explicabo
+                ea nihil est quas dignissimos eaque dolor.</p>
+              <p class="block-ideas__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid numquam
+                esse quaerat! Numquam reiciendis eum distinctio nam eligendi alias error officia animi? Odio, laborum
+                temporibus. Deserunt exercitationem quia ducimus alias!</p>
+            </div>
+          </div>
+          <div class="block-ideas__wrapper block-ideas__wrapper--position">
+            <div class="block-ideas__group block-ideas__transform">
+              <img class="block-ideas__photo" src="../img/ideasimg3.png" alt="Фото смесителя" loading="lazy">
+              <p class="block-ideas__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat tenetur,
+                fugiat neque unde reprehenderit labore at, maiores modi iusto dolorem quis assumenda amet aliquid nihil
+                qui molestias quasi placeat ad!</p>
+              <p class="block-ideas__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nam unde quam,
+                est voluptate impedit hic consectetur quasi minus mollitia sint, commodi totam perferendis, ad et
+                consequatur iusto quidem officia.
               </p>
             </div>
           </div>
@@ -398,19 +442,25 @@
             <li class="page-footer__col page-footer__col--mobile">
               <a class="page-footer__link page-footer__link--mobile" href="#">О компании</a>
               <div class="page-footer__accordion">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, quia. Aliquam consectetur, aperiam ratione sequi blanditiis error recusandae nobis eius aspernatur quidem eaque dicta quod, ipsam nulla? Modi, a quo!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, quia. Aliquam consectetur, aperiam
+                  ratione sequi blanditiis error recusandae nobis eius aspernatur quidem eaque dicta quod, ipsam nulla?
+                  Modi, a quo!</p>
               </div>
             </li>
             <li class="page-footer__col page-footer__col--mobile">
               <a class="page-footer__link page-footer__link--mobile" href="#">Все продукты</a>
               <div class="page-footer__accordion">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, quia. Aliquam consectetur, aperiam ratione sequi blanditiis error recusandae nobis eius aspernatur quidem eaque dicta quod, ipsam nulla? Modi, a quo!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, quia. Aliquam consectetur, aperiam
+                  ratione sequi blanditiis error recusandae nobis eius aspernatur quidem eaque dicta quod, ipsam nulla?
+                  Modi, a quo!</p>
               </div>
             </li>
             <li class="page-footer__col page-footer__col--mobile">
               <a class="page-footer__link page-footer__link--mobile" href="#">Шоурумы</a>
               <div class="page-footer__accordion">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, quia. Aliquam consectetur, aperiam ratione sequi blanditiis error recusandae nobis eius aspernatur quidem eaque dicta quod, ipsam nulla? Modi, a quo!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, quia. Aliquam consectetur, aperiam
+                  ratione sequi blanditiis error recusandae nobis eius aspernatur quidem eaque dicta quod, ipsam nulla?
+                  Modi, a quo!</p>
               </div>
             </li>
           </ul>

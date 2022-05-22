@@ -33,15 +33,24 @@
   font-size: 16px;
   line-height: 25px;
   white-space: pre;
+  color: @black;
+  text-decoration: none;
 }
 
 .block-ideas__group {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
+
+  @media (min-width: 768px) {
+    margin-left: 20px;
+  }
 }
 
 .block-ideas__bottom {
+  @media (max-width: 768px) {
+    flex-direction: row;
+  }
+
   display: flex;
   flex-direction: column;
 }
@@ -51,10 +60,13 @@
 
   @media (max-width: 768px) {
     flex-wrap: wrap;
+    margin-bottom: 50px;
   }
 }
 
 .block-ideas__text {
+  margin: 0;
+
   @media (min-width: 768px) {
     max-width: 320px;
   }
@@ -76,7 +88,9 @@
 }
 
 .block-ideas__wrapper--position {
-  margin-right: 58px;
+  @media (min-width: 768px) {
+    margin-right: 58px;
+  }
 }
 
 .block-ideas__transform {
@@ -93,7 +107,11 @@
 }
 
 .block-ideas__bottom img {
-  height: 310px;
+  height: 230px;
+
+  @media (min-width: 768px) {
+    height: 310px;
+  }
 }
 
 .block-ideas__list::-webkit-scrollbar {
@@ -103,5 +121,32 @@
 .block-ideas__inner {
   @media (max-width: 768px) {
     padding: 0;
+    display: none;
   }
+}
+
+.block-ideas__wrapper--mobile {
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+}
+
+.block-ideas__item.block-active {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-bottom: 5px solid @red--shadow;
+    bottom: 0;
+    display: block;
+    width: 100%;
+  }
+}
+
+/* Стили для активного контейнера вкладки */
+.block-ideas__inner.block-active {
+  display: block;
 }
