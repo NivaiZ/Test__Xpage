@@ -5,6 +5,7 @@ const dropDownLevel = document.querySelector('.header-bottom__level');
 const hoverCardMenu = document.querySelector('.header-bottom__level--items');
 const hoverCardFigure = document.querySelector('.header-bottom__level--figure');
 const accordionBtns = document.querySelectorAll('.page-footer__link--mobile');
+const anchors = document.querySelectorAll('.page-footer__scroll');
 
 const clickDropDownFunction = () => {
 
@@ -51,7 +52,6 @@ accordionBtns.forEach((accordion) => {
     this.classList.toggle("is-open");
 
     let content = this.nextElementSibling;
-    console.log(content);
 
     if (content.style.maxHeight) {
       //this is if the accordion is open
@@ -59,10 +59,22 @@ accordionBtns.forEach((accordion) => {
     } else {
       //if the accordion is currently closed
       content.style.maxHeight = content.scrollHeight + "px";
-      console.log(content.style.maxHeight);
     }
   };
 });
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (event) {
+    event.preventDefault()
+
+    const blockID = anchor.getAttribute('href')
+
+    document.querySelector(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
 
 clickDropDownFunction();
 clickHeaderDropdownFunction();

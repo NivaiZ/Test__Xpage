@@ -351,6 +351,11 @@ body {
   margin-right: 20px;
   position: relative;
 }
+@media (max-width: 375px) {
+  .header-block__item {
+    margin-right: 5px;
+  }
+}
 .header-block__item::after {
   content: "";
   border-right: 1px solid #E6E6E6;
@@ -1258,8 +1263,10 @@ body {
     flex-wrap: wrap;
   }
 }
-.block-ideas__text {
-  max-width: 320px;
+@media (min-width: 768px) {
+  .block-ideas__text {
+    max-width: 320px;
+  }
 }
 .block-ideas__item--arrow {
   flex: 1;
@@ -1293,6 +1300,11 @@ body {
 }
 .block-ideas__list::-webkit-scrollbar {
   width: 0;
+}
+@media (max-width: 768px) {
+  .block-ideas__inner {
+    padding: 0;
+  }
 }
 .page-footer__wrapper {
   background-color: #8C8987;

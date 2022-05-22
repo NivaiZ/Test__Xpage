@@ -55,7 +55,9 @@
 }
 
 .block-ideas__text {
-  max-width: 320px;
+  @media (min-width: 768px) {
+    max-width: 320px;
+  }
 }
 
 .block-ideas__item--arrow {
@@ -96,4 +98,10 @@
 
 .block-ideas__list::-webkit-scrollbar {
   width: 0;
+}
+
+.block-ideas__inner {
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 }
