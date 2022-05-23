@@ -1,3 +1,6 @@
+body {
+  font-family: "SuisseIntl", "Arial", sans-serif;
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -317,7 +320,7 @@ template {
 .header-block__nav {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 95px;
+  padding-bottom: 70px;
 }
 @media (max-width: 768px) {
   .header-block__nav {
@@ -327,11 +330,11 @@ template {
 .header-block__list {
   display: flex;
   align-items: center;
+  margin: 0;
 }
 .header-block__item {
   display: flex;
   list-style: none;
-  margin-right: 20px;
   position: relative;
 }
 @media (max-width: 375px) {
@@ -349,6 +352,11 @@ template {
 .header-block__item:last-child::after {
   border-right: none;
 }
+@media (min-width: 768px) {
+  .header-block__item {
+    margin: 0 0 15px 45px;
+  }
+}
 .header-block__down {
   position: relative;
 }
@@ -359,6 +367,7 @@ template {
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
+  font-family: "SuisseIntl";
 }
 .header-block__link:hover {
   color: #B49F8C;
@@ -396,6 +405,7 @@ template {
   position: relative;
   list-style: none;
   margin-top: 20px;
+  font-family: "SuisseIntl";
 }
 .header-block__language::after {
   position: absolute;
@@ -538,6 +548,12 @@ template {
 .header-bottom__list--foo {
   display: flex;
 }
+@media (min-width: 768px) {
+  .header-block__height {
+    width: 25px;
+    height: 25px;
+  }
+}
 .header-bottom__item {
   list-style: none;
   margin-right: 25px;
@@ -559,6 +575,11 @@ template {
   align-items: center;
   padding: 0;
 }
+@media (max-width: 768px) {
+  .header-bottom__list {
+    justify-content: space-around;
+  }
+}
 .header-bottom__link {
   display: flex;
   flex-direction: row-reverse;
@@ -570,6 +591,7 @@ template {
   line-height: 25px;
   position: relative;
   transition: 0.3s ease;
+  font-family: "SuisseIntl";
 }
 .header-bottom__link:hover::before {
   content: "";
@@ -666,6 +688,7 @@ template {
   top: 0;
   right: 0;
   z-index: 2;
+  font-family: "SuisseIntl";
 }
 @media (max-width: 768px) {
   .header-bottom__input {
@@ -736,7 +759,7 @@ template {
   width: 100%;
   margin-top: 20px;
 }
-@media (max-width: 768px) {
+@media (max-width: 860px) {
   .header-bottom__nav {
     display: none;
   }
@@ -892,7 +915,7 @@ template {
 }
 @media (min-width: 768px) {
   .header-bottom__link--arrow {
-    display: none;
+    display: flex;
   }
 }
 .header-bottom__general {
@@ -921,12 +944,11 @@ template {
     content: none;
   }
 }
-/* .header-bottom__item--desk {
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  .header-bottom__item--desk {
     display: none;
   }
 }
- */
 @media (max-width: 768px) {
   .header-bottom__item--none {
     width: 100%;
@@ -944,6 +966,7 @@ template {
 }
 .swiper-wrapper {
   padding: 0;
+  margin: 0;
 }
 .swiper-slide {
   list-style: none;
@@ -959,13 +982,20 @@ template {
   opacity: 0.2;
 }
 .swiper__item {
-  display: none;
+  display: block;
+  font-family: "SuisseIntl";
+  font-size: 45px;
+  line-height: 50px;
 }
 @media (min-width: 768px) {
   .swiper__item {
     display: block;
     list-style: none;
     flex: 1;
+    margin: 0;
+    padding: 35px 0 0 37px;
+    font-size: 85px;
+    line-height: 80px;
   }
 }
 .swiper__list {
@@ -1012,10 +1042,13 @@ template {
   flex: 1;
   max-width: 363px;
   margin-left: 40px;
+  font-family: "SuisseIntl";
+  margin-bottom: 47px;
 }
 @media (max-width: 768px) {
   .swiper__point {
     display: none;
+    margin-bottom: 0;
   }
 }
 .page-main__container .swiper__group .swiper__point--img {
@@ -1032,6 +1065,7 @@ template {
 }
 .swiper-figure img {
   width: 100%;
+  height: 595px;
 }
 .collection-block__list {
   display: flex;
@@ -1059,6 +1093,7 @@ template {
   margin-bottom: 10px;
   text-decoration: none;
   color: #000000;
+  font-family: "SuisseIntl";
 }
 @media (max-width: 768px) {
   .collection-block__link {
@@ -1070,6 +1105,7 @@ template {
   font-size: 45px;
   line-height: 50px;
   margin: 0;
+  font-family: "SuisseIntl";
 }
 @media (max-width: 768px) {
   .collection-block__heading {
@@ -1102,6 +1138,13 @@ template {
   color: #FFFFFF;
   top: 0;
 }
+@media (min-width: 991px) {
+  .collection-block__bestseller {
+    padding: 11px 13px 9px 20px;
+    margin-top: 8px;
+    left: -18px;
+  }
+}
 .collection-block__new {
   position: absolute;
   background-color: #114c7e;
@@ -1112,8 +1155,20 @@ template {
   padding: 15px;
   top: 61px;
 }
+@media (min-width: 991px) {
+  .collection-block__new {
+    padding: 8px 15px 12px 16px;
+    top: 53px;
+    left: -19px;
+  }
+}
 .collection-block {
   position: relative;
+}
+@media (min-width: 991px) {
+  section.collection-block {
+    padding-top: 100px;
+  }
 }
 .collection-block__swiper--list {
   display: flex;
@@ -1124,6 +1179,7 @@ template {
   line-height: 25px;
   list-style: none;
   margin-top: 10px;
+  font-family: "SuisseIntl";
 }
 .collection-block__product--partnumber {
   font-weight: 400;
@@ -1131,6 +1187,7 @@ template {
   line-height: 25px;
   color: #AEAEAE;
   list-style: none;
+  font-family: "SuisseIntl";
 }
 .collection-block__buying {
   display: flex;
@@ -1142,6 +1199,7 @@ template {
   font-size: 16px;
   line-height: 25px;
   list-style: none;
+  font-family: "SuisseIntl";
 }
 .collection-block__button {
   list-style: none;
@@ -1152,6 +1210,10 @@ template {
   background: #B01E19;
   text-decoration: none;
   transition: 0.3s ease;
+  font-family: "SuisseIntl";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
 }
 .collection-block__button--link:hover {
   border: 2px solid #CD100A;
@@ -1212,6 +1274,10 @@ template {
     right: 75%;
   }
 }
+.collection-block__plus--one::after {
+  bottom: 38%;
+  right: 87%;
+}
 @media (max-width: 768px) {
   .collection-block__plus--one::after {
     bottom: 53%;
@@ -1219,8 +1285,8 @@ template {
   }
 }
 .collection-block__plus--two::after {
-  bottom: 58%;
-  right: 52%;
+  bottom: 65%;
+  right: 54%;
 }
 @media (max-width: 768px) {
   .collection-block__plus--two::after {
@@ -1229,8 +1295,8 @@ template {
   }
 }
 .collection-block__plus--three::after {
-  bottom: 23%;
-  right: 21%;
+  bottom: 33%;
+  right: 22%;
 }
 @media (max-width: 768px) {
   .collection-block__plus--three::after {
@@ -1239,9 +1305,8 @@ template {
   }
 }
 .collection-block__plus--four::after {
-  right: 64%;
-  bottom: 38%;
-  display: inline-table;
+  right: 68%;
+  bottom: 47%;
 }
 @media (max-width: 768px) {
   .collection-block__plus--four::after {
@@ -1250,6 +1315,14 @@ template {
   }
 }
 .collection-block__plus--black {
+  position: relative;
+}
+@media (max-width: 991px) {
+  .collection-block__plus--black {
+    width: 100%;
+  }
+}
+.collection-block__position {
   position: relative;
 }
 @media (max-width: 768px) {
@@ -1261,6 +1334,11 @@ template {
   .collection-block__position--opened {
     opacity: 1;
     position: fixed;
+  }
+}
+@media (max-width: 991px) {
+  .collection-block__big {
+    width: 100%;
   }
 }
 .block-ideas__heading {
@@ -1292,6 +1370,7 @@ template {
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
+  font-family: "SuisseIntl";
   white-space: pre;
   color: #000000;
   text-decoration: none;
@@ -1325,6 +1404,10 @@ template {
 }
 .block-ideas__text {
   margin: 0;
+  font-family: "SuisseIntl";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
 }
 @media (min-width: 768px) {
   .block-ideas__text {
@@ -1355,7 +1438,11 @@ template {
 }
 .block-ideas__photo {
   transition: 0.5s;
-  width: 100%;
+}
+@media (max-width: 991px) {
+  .block-ideas__photo {
+    width: 100%;
+  }
 }
 .block-ideas__photo:hover {
   transform: scale(1.05);
@@ -1366,21 +1453,22 @@ template {
 @media (min-width: 768px) {
   .block-ideas__bottom img {
     height: 310px;
+    width: 210px;
   }
 }
 .block-ideas__list::-webkit-scrollbar {
   width: 0;
 }
-@media (max-width: 768px) {
-  .block-ideas__inner {
-    padding: 0;
-    display: none;
-  }
+.block-ideas__inner {
+  padding: 0;
+  display: none;
+}
+.block-ideas__wrapper--mobile {
+  flex-direction: column;
 }
 @media (max-width: 768px) {
   .block-ideas__wrapper--mobile {
     display: flex;
-    flex-direction: column;
     margin-left: 15px;
   }
 }
@@ -1425,6 +1513,10 @@ template {
   border-left: none;
   border-right: none;
   background-color: #8C8987;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  font-family: "SuisseIntl";
 }
 @media (max-width: 768px) {
   .page-footer__enter--email {
@@ -1478,6 +1570,12 @@ template {
     display: flex;
   }
 }
+.page-footer__text {
+  font-family: "SuisseIntl";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+}
 .page-footer__text--arrow {
   position: relative;
   display: flex;
@@ -1515,6 +1613,7 @@ template {
   line-height: 25px;
   margin-left: 0;
   max-width: 210px;
+  font-family: "SuisseIntl";
 }
 @media (max-width: 768px) {
   .page-footer__link {
@@ -1632,13 +1731,13 @@ template {
 }
 .page-footer__social--grid {
   padding: 0;
+  margin: 0;
 }
 @media (max-width: 768px) {
   .page-footer__social--grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin: 0;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 }
 @media (max-width: 768px) {

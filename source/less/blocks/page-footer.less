@@ -25,6 +25,10 @@
   border-left: none;
   border-right: none;
   background-color: @taupe--gray;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  font-family: @deafult-font;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -75,6 +79,13 @@
   }
 }
 
+.page-footer__text {
+  font-family: @deafult-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+}
+
 .page-footer__text--arrow {
   position: relative;
   display: flex;
@@ -113,6 +124,7 @@
   line-height: 25px;
   margin-left: 0;
   max-width: 210px;
+  font-family: @deafult-font;
 
   @media (max-width: 768px) {
     max-width: unset;
@@ -240,12 +252,12 @@
 
 .page-footer__social--grid {
   padding: 0;
+  margin: 0;
 
   @media (max-width: 768px) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin: 0;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
 }
 
