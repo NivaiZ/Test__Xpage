@@ -7,8 +7,7 @@ const addClassFunction = () => {
     clickBurgerMenu.classList.toggle('header-block__burger__btn--opened');
     clickSideMenu.classList.toggle('header-bottom__nav--mobile');
     clickClassSide.classList.toggle('header-bottom__list--mobile--opened');
-
   })
-
 }
+
 addClassFunction();
