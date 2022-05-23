@@ -13,6 +13,11 @@ const swiper = new Swiper('.swiper.page-main__swiper', {
   navigation: {
     nextEl: '.swiper-button-next',
   },
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    },
 });
 
 const swiperCollection = new Swiper('.swiper.collection-block__swiper', {

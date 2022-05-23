@@ -532,11 +532,6 @@ template {
     display: block;
   }
 }
-/* .header-bottom__item--none {
-  @media (min-width: 768px) {
-    display: none;
-  }
-} */
 .header-block__img {
   display: block;
 }
@@ -1483,7 +1478,6 @@ template {
   display: block;
   width: 100%;
 }
-/* Стили для активного контейнера вкладки */
 .block-ideas__inner.block-active {
   display: block;
 }
